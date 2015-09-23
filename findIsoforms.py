@@ -2,7 +2,7 @@
 # Finds isoforms where unique is greater than 0
 import os
 directories = os.listdir(os.getcwd())
-outFile = open ('MS_Isoforms1.txt', 'w')
+outFile = open ('MS_Isoforms.txt', 'w')
 for i in directories:
     if '.combined-Results' in i:
         try:
