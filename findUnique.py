@@ -1,4 +1,4 @@
-# Find all with a specific amount of unique
+# Find all with a specific amount of unique 
 # can then sort and inspect to see if canonical and isoform of a certain uniprot id are both present
 
 import os
