@@ -1,7 +1,7 @@
 #Creates a file with a list of all the proteins in alphabetical order
 #Takes that file and creates a file of proteins that have isoforms
 with open("HS_CB660_uniprot.prot_count_mFDRpsm001.unique_rmzero") as inFile:
-    with open("protein_list", "w") as outFile:
+    with open("unique_proteins.txt", "w") as outFile:
         for line in inFile:
             if not(line.startswith('CONTAMINANT') or line.startswith('#')):
                 sline = line.split()
@@ -9,8 +9,8 @@ with open("HS_CB660_uniprot.prot_count_mFDRpsm001.unique_rmzero") as inFile:
 protein = ''
 possible = ''
 newProtein = True
-with open("protein_list") as inFile2:
-    with open("prots_w_isoforms", "w") as outFile2:
+with open("unique_proteins.txt") as inFile2:
+    with open("multi_isoforms.txt", "w") as outFile2:
         for line in inFile2:
             possible = line.split('-')            
             if not(protein == '') and possible[0] == protein[0]:
