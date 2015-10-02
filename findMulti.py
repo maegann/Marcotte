@@ -1,5 +1,5 @@
 #Creates a file with a list of all the proteins in alphabetical order
-#Takes that file and creates a file of proteins that have isoforms
+#Takes that file and creates a file of proteins that have isoforms.
 with open("HS_CB660_uniprot.prot_count_mFDRpsm001.unique_rmzero") as inFile:
     with open("unique_proteins.txt", "w") as outFile:
         for line in inFile:
