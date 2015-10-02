@@ -1,3 +1,4 @@
+# Used on datacase when throw out duplicates
 rep = ""
 with open("uniprot_dup.fasta.clstr") as inFile:
     with open("duplicates_key.txt", "w") as outFile:
