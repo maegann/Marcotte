@@ -1,4 +1,4 @@
-#run in the project directory
+# Run on prot_count files
 # Finds isoforms where unique is greater than 0
 import os
 directories = os.listdir(os.getcwd())
