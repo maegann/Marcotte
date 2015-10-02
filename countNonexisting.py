@@ -1,4 +1,4 @@
-# Counts how many prot_count files do not exist
+# Counts how many prot_count files do not exist.
 import os
 directories = os.listdir(os.getcwd())
 nonexistant = 0
