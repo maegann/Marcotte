@@ -1,5 +1,5 @@
-# run on prot_count files 
-Find all with a specific amount of unique
+# run on prot_count files .
+# Find all with a specific amount of unique
 # can then sort and inspect to see if canonical and isoform of a certain uniprot id are both present
 
 import os
