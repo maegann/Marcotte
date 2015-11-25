@@ -1,5 +1,7 @@
-#Creates a file with a list of all the proteins in alphabetical order
-#Takes that file and creates a file of proteins that have isoforms.
+# Finds cases where multiple isoforms are found in the same elution file.
+# Change test.txt to be the name of the elution file
+#Creates a file with a list of all the proteins in alphabetical order (proteins.txt)
+#Takes that file and creates a file of proteins that have isoforms (multi_isoforms.txt)
 with open("test.txt") as inFile:
     with open("proteins.txt", "w") as outFile:
         for line in inFile:
