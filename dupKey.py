@@ -1,4 +1,5 @@
 # Used on database when throw out duplicates.
+# DB: Shows duplicates thrown out (column 2)
 rep = ""
 with open("uniprot_dup.fasta.clstr") as inFile:
     with open("duplicates_key.txt", "w") as outFile:
