@@ -1,4 +1,5 @@
 # Counts how many prot_count files do not exist.
+# run in the Results directory, which contains combined-Results directories.
 import os
 directories = os.listdir(os.getcwd())
 nonexistant = 0
