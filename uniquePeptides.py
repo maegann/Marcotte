@@ -2,7 +2,7 @@
 # Uses multi_isoforms.txt, combined-Results, and elution
 # Compare combined-Results to elution for multi_isoforms.txt
 
-
+# make sure to change the name of the elution file for different experiments
 # Compare the proteins with multiple isoforms found to the elution file
 # Create a string of the relavant elution information
 import os
@@ -16,7 +16,7 @@ pepCounts = ''
 pepArray = []
 
 for protein in multiIsoforms:
-    with open('prot_counts/HS_CB660_uniprot.prot_count_mFDRpsm001.unique_rmzero', 'r') as elutionFile: # make it so elution file isnt as specific
+    with open('prot_counts/HS_CB660_uniprot.prot_count_mFDRpsm001.unique_rmzero', 'r') as elutionFile: #change this filename
         for eluLine in elutionFile:
             if eluLine.startswith(protein.rstrip('\n')+'\t'):
                 tempArray = eluLine.split('\t')
