@@ -1,4 +1,6 @@
-# Compare 2 files that list all of the unique proteins found to see which ones are cell type specific
+# Compare 2 files (protein.txt, but renamed) that list all of the unique proteins found to see which ones are cell type specific
+# make sure to change the file names for inCell1 and inCell2 in both places
+# Also change the name of the experiments in the string that is outputted.
 inCell1 = open('HS_CB660_proteins.txt')
 outCell1 = open('cell1_only.txt', 'w')
 for line1 in inCell1:
